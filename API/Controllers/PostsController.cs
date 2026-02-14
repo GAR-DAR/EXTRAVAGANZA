@@ -2,30 +2,24 @@ using Core.Entities;
 using Infrastructure.Data;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+using Core.Interfaces;
 
 namespace API.Controllers;
 
 [ApiController]
 [Route("api/[controller]")]
-public class PostsController : ControllerBase
+public class PostsController(IPostRepository repo) : ControllerBase
 {
-
-    private readonly StoreContext context;
-    public PostsController(StoreContext context)
-    {
-        this.context = context;
-    }
-
     [HttpGet]  
-    public async Task<ActionResult<IEnumerable<Post>>> GetPosts()
+    public async Task<ActionResult<IReadOnlyList<Post>>> GetPosts()
     {
-        return await context.Posts.ToListAsync();
+        return Ok(await repo.GetPostsAsync());
     }
 
     [HttpGet("{id:int}")] // api/posts/3
     public async Task<ActionResult<Post>> GetPost(int id)
     {
-        var post = await context.Posts.FindAsync(id);
+        var post = await repo.GetPostByIdAsync(id);
         if (post == null)
         {
             return NotFound();
@@ -36,9 +30,12 @@ public class PostsController : ControllerBase
     [HttpPost]
     public async Task<ActionResult<Post>> CreatePost(Post post)
     {
-        context.Posts.Add(post);
-        await context.SaveChangesAsync();
-        return CreatedAtAction(nameof(GetPost), new { id = post.Id }, post);
+        repo.AddPost(post);
+        if (await repo.SaveChangesAsync())
+        {
+            return CreatedAtAction("GetPost", new { id = post.Id }, post);
+        }
+        return BadRequest("Failed to create post.");
     }
 
     [HttpPut("{id:int}")]
@@ -49,30 +46,35 @@ public class PostsController : ControllerBase
             return BadRequest("Cannot update post. Id mismatch or post does not exist.");
         }
 
-        context.Entry(post).State = EntityState.Modified;
-        await context.SaveChangesAsync();
-        return NoContent(); // 204 No Content success
-        
+        repo.UpdatePost(post);
+        if (await repo.SaveChangesAsync())
+        {
+            return NoContent();
+        }
+        return BadRequest("Failed to update post.");
     }
 
     [HttpDelete("{id:int}")]
     public async Task<ActionResult> DeletePost(int id)
     {
-        var post = await context.Posts.FindAsync(id);
+        var post = await repo.GetPostByIdAsync(id);
         if (post == null)
         {
             return NotFound();
         }
-        context.Posts.Remove(post);
-        await context.SaveChangesAsync();
-        return NoContent();
+        repo.DeletePost(post);
+       if (await repo.SaveChangesAsync())
+        {
+            return NoContent();
+        }
+        return BadRequest("Failed to delete post.");
     }
 
 
     #region Helper Methods
     private bool PostExists(int id)
     {
-        return context.Posts.Any(e => e.Id == id);
+        return repo.PostExists(id);
     }
     #endregion
 
