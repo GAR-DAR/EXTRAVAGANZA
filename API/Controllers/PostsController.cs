@@ -1,25 +1,29 @@
 using Core.Entities;
+using Core.Interfaces;
 using Infrastructure.Data;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
-using Core.Interfaces;
+using Core.Specifications;
 
 namespace API.Controllers;
 
 [ApiController]
 [Route("api/[controller]")]
-public class PostsController(IPostRepository repo) : ControllerBase
+public class PostsController(IGenericRepository<Post> repo) : ControllerBase
 {
     [HttpGet]  
-    public async Task<ActionResult<IReadOnlyList<Post>>> GetPosts()
+    public async Task<ActionResult<IReadOnlyList<Post>>> GetPosts(string ?type, string ?author, string ?sort)
     {
-        return Ok(await repo.GetPostsAsync());
+        var spec = new PostSpecification(type, author, sort); 
+        var posts = await repo.ListAsync(spec);
+            
+        return Ok(posts);
     }
 
     [HttpGet("{id:int}")] // api/posts/3
     public async Task<ActionResult<Post>> GetPost(int id)
     {
-        var post = await repo.GetPostByIdAsync(id);
+        var post = await repo.GetByIdAsync(id);
         if (post == null)
         {
             return NotFound();
@@ -30,8 +34,8 @@ public class PostsController(IPostRepository repo) : ControllerBase
     [HttpPost]
     public async Task<ActionResult<Post>> CreatePost(Post post)
     {
-        repo.AddPost(post);
-        if (await repo.SaveChangesAsync())
+        repo.Add(post);
+        if (await repo.SaveAllAsync())
         {
             return CreatedAtAction("GetPost", new { id = post.Id }, post);
         }
@@ -46,8 +50,8 @@ public class PostsController(IPostRepository repo) : ControllerBase
             return BadRequest("Cannot update post. Id mismatch or post does not exist.");
         }
 
-        repo.UpdatePost(post);
-        if (await repo.SaveChangesAsync())
+        repo.Update(post);
+        if (await repo.SaveAllAsync())
         {
             return NoContent();
         }
@@ -57,24 +61,37 @@ public class PostsController(IPostRepository repo) : ControllerBase
     [HttpDelete("{id:int}")]
     public async Task<ActionResult> DeletePost(int id)
     {
-        var post = await repo.GetPostByIdAsync(id);
+        var post = await repo.GetByIdAsync(id);
         if (post == null)
         {
             return NotFound();
         }
-        repo.DeletePost(post);
-       if (await repo.SaveChangesAsync())
+        repo.Remove(post);
+       if (await repo.SaveAllAsync())
         {
             return NoContent();
         }
         return BadRequest("Failed to delete post.");
     }
 
+    [HttpGet("types")]
+    public async Task<ActionResult<IReadOnlyList<string>>> GetTypes()
+    {
+        var spec = new TypeListSpecification();
+        return Ok(await repo.ListAsync(spec));  
+    }
+
+    [HttpGet("authors")]
+    public async Task<ActionResult<IReadOnlyList<string>>> GetAuthors()
+    {
+        var spec = new AuthorListSpecification();
+        return Ok(await repo.ListAsync(spec));
+    }
 
     #region Helper Methods
     private bool PostExists(int id)
     {
-        return repo.PostExists(id);
+        return repo.Exists(id);
     }
     #endregion
 

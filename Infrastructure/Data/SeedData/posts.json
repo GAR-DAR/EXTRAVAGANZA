@@ -1,102 +1,142 @@
 [
-    {
-        "title": "Wireless Bamboo Keyboard )",
-        "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. )",
-        "pictureUrl": "images/posts/viral-spread.png"
-    },
-    {
-        "title": "Organic Cotton Mouse Pad )",
-        "content": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. )",
-        "pictureUrl": "images/posts/viral-spread.png"
-    },
-    {
-        "title": "Handcrafted Steel Wallet )",
-        "content": "Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? )",
-        "pictureUrl": "images/posts/viral-spread.png"
-    },
-    {
-        "title": "Vintage Leather Headphones )",
-        "content": "At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. )",
-        "pictureUrl": "images/posts/viral-spread.png"
-    },
-    {
-        "title": "Eco-Friendly Glass Bottle )",
-        "content": "Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. )",
-        "pictureUrl": "images/posts/viral-spread.png"
-    },
-    {
-        "title": "Smart Ceramic Coffee Mug )",
-        "content": "Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. )",
-        "pictureUrl": "images/posts/viral-spread.png"
-    },
-    {
-        "title": "Recycled Plastic Backpack )",
-        "content": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident. )",
-        "pictureUrl": "images/posts/viral-spread.png"
-    },
-    {
-        "title": "Minimalist Wooden Desk )",
-        "content": "Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. )",
-        "pictureUrl": "images/posts/viral-spread.png"
-    },
-    {
-        "title": "Sustainable Hemp Tote Bag )",
-        "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium. Totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. )",
-        "pictureUrl": "images/posts/viral-spread.png"
-    },
-    {
-        "title": "Artisan Brass Lamp )",
-        "content": "Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est qui dolorem ipsum quia dolor sit amet consectetur adipisci velit. )",
-        "pictureUrl": "images/posts/viral-spread.png"
-    },
-    {
-        "title": "Portable Solar Charger )",
-        "content": "Sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam quis nostrum exercitationem ullam corporis suscipit laboriosam nisi ut aliquid ex ea commodi consequatur. Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur. )",
-        "pictureUrl": "images/posts/viral-spread.png"
-    },
-    {
-        "title": "Ergonomic Wool Blanket )",
-        "content": "Vel illum qui dolorem eum fugiat quo voluptas nulla pariatur? At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident. )",
-        "pictureUrl": "images/posts/viral-spread.png"
-    },
-    {
-        "title": "Compact Titanium Spork )",
-        "content": "Similique sunt in culpa qui officia deserunt mollit anim id est laborum. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore cum soluta nobis est eligendi optio cumque nihil impedit quo minus. )",
-        "pictureUrl": "images/posts/viral-spread.png"
-    },
-    {
-        "title": "Bio-Based Phone Case )",
-        "content": "Id quod maxime placeat facere possimus omnis voluptas assumenda est omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus. )",
-        "pictureUrl": "images/posts/viral-spread.png"
-    },
-    {
-        "title": "Handwoven Silk Scarf )",
-        "content": "Ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat. Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam quis nostrud exercitation ullamco laboris. )",
-        "pictureUrl": "images/posts/viral-spread.png"
-    },
-    {
-        "title": "Adjustable Aluminum Tripod )",
-        "content": "Nisi ut aliquip ex ea commodo consequat duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident sunt in culpa qui officia deserunt mollit anim id est laborum. )",
-        "pictureUrl": "images/posts/viral-spread.png"
-    },
-    {
-        "title": "Natural Rubber Yoga Mat )",
-        "content": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium totam rem aperiam. Eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit. )",
-        "pictureUrl": "images/posts/viral-spread.png"
-    },
-    {
-        "title": "Modular Oak Bookshelf )",
-        "content": "Sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt neque porro quisquam est qui dolorem ipsum quia dolor sit amet consectetur adipisci velit sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. )",
-        "pictureUrl": "images/posts/viral-spread.png"
-    },
-    {
-        "title": "Insulated Stainless Flask )",
-        "content": "Ut enim ad minima veniam quis nostrum exercitationem ullam corporis suscipit laboriosam nisi ut aliquid ex ea commodi consequatur quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur vel illum qui dolorem eum fugiat quo voluptas nulla pariatur. )",
-        "pictureUrl": "images/posts/viral-spread.png"
-    },
-    {
-        "title": "Breathable Mesh Sneakers )",
-        "content": "At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident similique sunt in culpa qui officia deserunt mollitia animi id est laborum et dolorum fuga et harum quidem rerum. )",
-        "pictureUrl": "images/posts/viral-spread.png"
-    }
+  {
+    "Title": "Finding Balance in a Busy World",
+    "Content": "Exploring the nuances of daily life and how to maintain a sense of calm amidst the chaos of a modern schedule. It's about the small victories in your morning routine. )",
+    "PictureUrl": "images/posts/life-balance.png",
+    "Type": "Life",
+    "Author": "Sarah Jenkins"
+  },
+  {
+    "Title": "Mastering Active Recall Techniques",
+    "Content": "Studying doesn't have to be a chore. By using active recall and spaced repetition, you can retain information much more effectively for your upcoming exams. )",
+    "PictureUrl": "images/posts/study-tips.png",
+    "Type": "Studying",
+    "Author": "David Chen"
+  },
+  {
+    "Title": "The Grace of the Spin",
+    "Content": "Pole dancing is a unique blend of incredible strength and artistic expression. This post covers the foundational moves for beginners looking to build core power. )",
+    "PictureUrl": "images/posts/pole-dance.png",
+    "Type": "Pole Dancing",
+    "Author": "Elena Rodriguez"
+  },
+  {
+    "Title": "Crocheting Your First Granny Square",
+    "Content": "A staple of the craft, the granny square is the perfect starting point for any crocheting enthusiast. Grab your hook and some yarn to get started on this classic. )",
+    "PictureUrl": "images/posts/crochet-guide.png",
+    "Type": "Crocheting",
+    "Author": "Marcus Thorne"
+  },
+  {
+    "Title": "Working with Sterling Silver Wire",
+    "Content": "Jewelry making requires patience and precision. Learn how to manipulate silver wire to create intricate, hand-crafted rings and custom pendants. )",
+    "PictureUrl": "images/posts/jewelry-craft.png",
+    "Type": "Jewelry Making",
+    "Author": "Aisha Khan"
+  },
+  {
+    "Title": "Mindfulness and Mental Clarity",
+    "Content": "Wellness is more than just physical health; it's about the state of your mind. We dive into daily meditation practices that help clear the mental fog. )",
+    "PictureUrl": "images/posts/wellness-mind.png",
+    "Type": "Wellness",
+    "Author": "Sarah Jenkins"
+  },
+  {
+    "Title": "Optimizing Your Dorm Workspace",
+    "Content": "When you're studying in a small space, organization is everything. Here are the best ways to keep your desk clean and your mind focused on the books. )",
+    "PictureUrl": "images/posts/dorm-setup.png",
+    "Type": "Studying",
+    "Author": "David Chen"
+  },
+  {
+    "Title": "Building Grip Strength for the Pole",
+    "Content": "One of the biggest hurdles in pole dancing is maintaining a solid grip. We review the best exercises and products to help you stay on the pole longer. )",
+    "PictureUrl": "images/posts/pole-grip.png",
+    "Type": "Pole Dancing",
+    "Author": "Elena Rodriguez"
+  },
+  {
+    "Title": "Choosing the Right Crochet Hook",
+    "Content": "Ergonomics matter when you're crocheting for hours. Discover the differences between aluminum, plastic, and bamboo hooks for your next big project. )",
+    "PictureUrl": "images/posts/crochet-hooks.png",
+    "Type": "Crocheting",
+    "Author": "Marcus Thorne"
+  },
+  {
+    "Title": "Setting Stones in Custom Settings",
+    "Content": "The art of jewelry making reaches a new level when you begin setting precious stones. This guide covers the basics of bezel and prong settings. )",
+    "PictureUrl": "images/posts/stone-setting.png",
+    "Type": "Jewelry Making",
+    "Author": "Aisha Khan"
+  },
+  {
+    "Title": "The Importance of Sleep Hygiene",
+    "Content": "Life moves fast, but your body needs rest. Improving your sleep hygiene is the single most effective way to boost your overall wellness and productivity. )",
+    "PictureUrl": "images/posts/sleep-wellness.png",
+    "Type": "Wellness",
+    "Author": "Sarah Jenkins"
+  },
+  {
+    "Title": "Transitioning Between Pole Moves",
+    "Content": "Fluidity is what makes pole dancing look effortless. Focus on your transitions to connect individual tricks into a seamless, beautiful routine. )",
+    "PictureUrl": "images/posts/pole-flow.png",
+    "Type": "Pole Dancing",
+    "Author": "Elena Rodriguez"
+  },
+  {
+    "Title": "Reading Complex Crochet Patterns",
+    "Content": "Don't let the abbreviations scare you. Once you understand the shorthand, you can unlock thousands of advanced crocheting patterns for garments. )",
+    "PictureUrl": "images/posts/crochet-patterns.png",
+    "Type": "Crocheting",
+    "Author": "Marcus Thorne"
+  },
+  {
+    "Title": "Deep Work and Study Sessions",
+    "Content": "Studying for four hours isn't effective if you're distracted. Learn how to enter a state of 'Deep Work' to get more done in half the time. )",
+    "PictureUrl": "images/posts/deep-work.png",
+    "Type": "Studying",
+    "Author": "David Chen"
+  },
+  {
+    "Title": "Polishing Your Finished Jewelry",
+    "Content": "The final step of jewelry making is the most satisfying. Using the right polishing compounds will give your handmade pieces a professional, high-shine finish. )",
+    "PictureUrl": "images/posts/jewelry-polish.png",
+    "Type": "Jewelry Making",
+    "Author": "Aisha Khan"
+  },
+  {
+    "Title": "Embracing Minimalist Living",
+    "Content": "Decluttering your life leads to decluttering your mind. We explore how a minimalist approach to possessions can lead to a more fulfilling daily life. )",
+    "PictureUrl": "images/posts/minimalism.png",
+    "Type": "Life",
+    "Author": "Sarah Jenkins"
+  },
+  {
+    "Title": "Nutritional Basics for Longevity",
+    "Content": "Wellness starts in the kitchen. Understanding macronutrients and whole foods is essential for maintaining energy levels throughout your busy week. )",
+    "PictureUrl": "images/posts/nutrition.png",
+    "Type": "Wellness",
+    "Author": "Aisha Khan"
+  },
+  {
+    "Title": "Note-Taking for Visual Learners",
+    "Content": "If traditional outlines aren't working, try mind-mapping. It's a great way for visual learners to connect concepts while studying complex subjects. )",
+    "PictureUrl": "images/posts/mind-map.png",
+    "Type": "Studying",
+    "Author": "David Chen"
+  },
+  {
+    "Title": "Amigurumi: Making Crochet Toys",
+    "Content": "The world of amigurumi brings crocheting to life. Learn the circular stitching techniques required to make adorable 3D characters and animals. )",
+    "PictureUrl": "images/posts/amigurumi.png",
+    "Type": "Crocheting",
+    "Author": "Marcus Thorne"
+  },
+  {
+    "Title": "Overcoming Performance Anxiety",
+    "Content": "Whether it's for pole dancing or a public speech, nerves are natural. Use these breathing techniques to stay grounded before you take the stage. )",
+    "PictureUrl": "images/posts/performance.png",
+    "Type": "Life",
+    "Author": "Elena Rodriguez"
+  }
 ]
