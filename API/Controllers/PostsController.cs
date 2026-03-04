@@ -1,23 +1,20 @@
 using Core.Entities;
 using Core.Interfaces;
-using Infrastructure.Data;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.EntityFrameworkCore;
 using Core.Specifications;
+using API.RequestHelpers;
+
 
 namespace API.Controllers;
 
-[ApiController]
-[Route("api/[controller]")]
-public class PostsController(IGenericRepository<Post> repo) : ControllerBase
+
+public class PostsController(IGenericRepository<Post> repo) : BaseAPIController
 {
     [HttpGet]  
-    public async Task<ActionResult<IReadOnlyList<Post>>> GetPosts(string ?type, string ?author, string ?sort)
+    public async Task<ActionResult<IReadOnlyList<Post>>> GetPosts([FromQuery] PostSpecParams specParams)
     {
-        var spec = new PostSpecification(type, author, sort); 
-        var posts = await repo.ListAsync(spec);
-            
-        return Ok(posts);
+        var spec = new PostSpecification(specParams); 
+        return await CreatePagedResult(repo, spec, specParams.PageIndex, specParams.PageSize);
     }
 
     [HttpGet("{id:int}")] // api/posts/3
