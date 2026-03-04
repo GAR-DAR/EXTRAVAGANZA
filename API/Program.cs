@@ -2,6 +2,7 @@ using Infrastructure.Data;
 using Microsoft.EntityFrameworkCore;
 using Core.Interfaces;
 using Infrastructure.Data.SeedData;
+using API.Middleware;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -11,10 +12,14 @@ builder.Services.AddDbContext<StoreContext>(options =>
 
 builder.Services.AddScoped<IPostRepository, PostRepository>(); // livetime of the http request
 builder.Services.AddScoped(typeof(IGenericRepository<>), typeof(GenericRepository<>)); 
+builder.Services.AddCors();
 
 
 var app = builder.Build();
 
+app.UseMiddleware<ExceptionMiddleware>();
+
+app.UseCors(x => x.AllowAnyHeader().AllowAnyMethod().WithOrigins("http://localhost:4200", "https://localhost:4200")); // allow any header and method from the specified origin (React app running on localhost:3000)
 
 app.MapControllers();
 
